@@ -1,10 +1,116 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colours of Courage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<header class="hero">
+    <img src="3b03e178-a457-4cf9-b549-3b75cd518699.png" alt="game_img1" class="hero-img">
     <h1>Colours of Courage</h1>
+    <p>Where growth, emotion, and choice shape your path</p>
+</header>
+
+<nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#world">World</a>
+    <a href="#features">Experience</a>
+    <a href="#info">Details</a>
+</nav>
+
+<main class="container">
+
+    <section id="about" class="card about">
+        <div>
+            <h2>A Journey of Growth</h2>
+            <p>
+                <strong>The Colours of Courage</strong> is a story-driven adventure that blends meaningful gameplay
+                with the science of positive psychology.
+            </p>
+            <p>
+                You follow <strong>Sky</strong>, navigating the challenges of growing up, helping others, and learning
+                how emotions shape the way we see the world.
+            </p>
+            <p>
+                This experience is not about being told what to do — it is about discovering growth through
+                action, kindness, and reflection.
+            </p>
+        </div>
+        <div>
+            <img src="d520f123-5443-4e6b-9b10-a06c3075ca31.png" alt="game_img2">
+        </div>
+    </section>
+
+    <section id="world" class="card">
+        <h2>The World of New Town</h2>
+        <p>
+            Set in the vibrant community of <strong>New Town</strong> and its symbolic landscapes,
+            every location reflects emotional states and personal challenges.
+        </p>
+        <p>
+            From peaceful natural areas to meaningful interactive spaces, the world evolves
+            alongside your journey.
+        </p>
+    </section>
+
+    <section id="features" class="card">
+        <h2>Interactive Growth Systems</h2>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📓 Personal Journal</h3>
+                <p>Reflect on experiences and track emotional growth.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎯 Mood Metres</h3>
+                <p>Understand and visualize emotional states in real time.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🌱 Skill Building</h3>
+                <p>Develop perseverance, empathy, and decision-making.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎒 Interactive Systems</h3>
+                <p>Inventories and practices make learning engaging and natural.</p>
+            </div>
+        </div>
+
+        <button onclick="openPopup()">Reflect</button>
+    </section>
+
+    <section id="info" class="card">
+        <h2>Game Details</h2>
+        <div class="grid">
+            <div><span>Developer</span>George Wang</div>
+            <div><span>Release</span>March 27, 2026</div>
+            <div><span>Genre</span>RPG / Interactive Fiction</div>
+            <div><span>Focus</span>Positive Psychology</div>
+            <div><span>Mode</span>Single Player</div>
+            <div><span>Price</span>Free to Play</div>
+        </div>
+    </section>
+
+</main>
+
+<div id="popup" class="popup hidden">
+    <div class="popup-content">
+        <p id="popup-text"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Colours of Courage</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
