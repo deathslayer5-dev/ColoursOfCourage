@@ -1,4 +1,3 @@
-
 // script.js
 function openPopup() {
     const messages = [

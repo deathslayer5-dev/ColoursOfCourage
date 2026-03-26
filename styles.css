@@ -1,3 +1,5 @@
+
+
 /* styles.css */
 html { scroll-behavior: smooth; }
 
@@ -26,9 +28,14 @@ body {
     color: white;
     text-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
+.hero p {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
 
 .navbar {
-    font-size: 2rem;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -40,9 +47,18 @@ body {
     backdrop-filter: blur(12px);
     box-shadow: inset 0 0 20px rgba(255,255,255,0.7), 0 10px 20px rgba(0,0,0,0.1);
 }
-
-.navbar a {
+.navbar a{
     text-decoration: none;
+    font-size: 1.8rem;
+}
+.navbar:hover {
+    animation: floatUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+.navbar a:hover{
+    animation: floatSmall 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transform: translateY(-1px) scale(1.01);
 }
 
 .container {
@@ -61,6 +77,14 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     font-size:1.4rem;
 }
+.card:hover {
+    animation: floatUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
 
 .about {
     display: grid;
@@ -85,6 +109,22 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
+.feature:hover {
+    animation: floatSmall 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes floatSmall {
+    0% { transform: translateY(0) scale(1); }
+    /*50% { transform: translateY(-4px) scale(1.02); }*/
+    100% { transform: translateY(-8px) scale(1.03); }
+}
+
+.feature:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+
+
 button {
     margin-top: 20px;
     padding: 12px 25px;
@@ -105,6 +145,22 @@ button {
     background: #f0f8ff;
     padding: 15px;
     border-radius: 12px;
+}
+.grid div:hover {
+    animation: floatTiny 0.25s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.grid span{
+    padding:5px;
+    font-weight: bold;
+}
+@keyframes floatTiny {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-6px) scale(1.01); }
+}
+
+.grid div:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 .popup {
@@ -138,4 +194,31 @@ button {
 footer {
     text-align: center;
     padding: 20px;
+}
+
+/* FLOATING STEAM BUTTON */
+.steam-button {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-15deg);
+    z-index: 1000;
+    animation: swing 2s infinite ease-in-out;
+}
+
+.steam-button img {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes swing {
+    0% { transform: translateY(-50%) rotate(-15deg); }
+    50% { transform: translateY(-50%) rotate(15deg); }
+    100% { transform: translateY(-50%) rotate(-15deg); }
+}
+
+
+@keyframes floatUp {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-10px) scale(1.02); }
 }
