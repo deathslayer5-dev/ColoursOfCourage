@@ -1,7 +1,10 @@
 
 
 /* styles.css */
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+}
 
 body {
     margin: 0;
@@ -50,6 +53,8 @@ body {
 .navbar a{
     text-decoration: none;
     font-size: 1.8rem;
+    color: #4fa9ff;
+    font-weight: bold;
 }
 .navbar:hover {
     animation: floatUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -59,6 +64,9 @@ body {
 .navbar a:hover{
     animation: floatSmall 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     transform: translateY(-1px) scale(1.01);
+}
+.navbar a:visited{
+    color: #4fa9ff;
 }
 
 .container {
@@ -84,8 +92,16 @@ body {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 30px 60px rgba(0,0,0,0.2);
 }
-
-
+.button{
+    font-family: 'Nunito', sans-serif;
+    font-size:1.4rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.button:hover {
+    animation: floatUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,7 +138,6 @@ body {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
-
 
 
 button {
@@ -164,6 +179,7 @@ button {
 }
 
 .popup {
+    font-size:1.3rem;
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
@@ -207,6 +223,34 @@ footer {
 }
 
 .steam-button img {
+    width: 200px;
+    height: 200px;
+}
+/* FLOATING instagram BUTTON */
+.instagram-button {
+    position: fixed;
+    left: 50px;
+    top: 30%;
+    transform: translateY(-50%) rotate(-15deg);
+    z-index: 1000;
+    animation: swing 2s infinite ease-in-out;
+}
+
+.instagram-button img {
+    width: 200px;
+    height: 200px;
+}
+/* FLOATING Youtube BUTTON */
+.youtube-button {
+    position: fixed;
+    left: 50px;
+    top: 70%;
+    transform: translateY(-50%) rotate(-15deg);
+    z-index: 1000;
+    animation: swing 2s infinite ease-in-out;
+}
+
+.youtube-button img {
     width: 200px;
     height: 200px;
 }
