@@ -206,7 +206,46 @@ button {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
+#contact h1{
+    font-size: 2rem;
+}
 
+.form-group{
+    display:grid;
+    font-size: 1.2rem;
+    background: #dde6f8;
+    padding:10px;
+    border-radius: 10px;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
+    /*max-width: 400px;*/
+}
+.form-group:not(:last-child){
+    margin-bottom: 20px;
+}
+.form-group:hover{
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.form-group label{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input{
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #dff3ff;
+    padding:2px;
+}
+.form-group textarea{
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #dff3ff;
+    padding:2px;
+}
 .popup {
     font-size:1.3rem;
     position: fixed;
