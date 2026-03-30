@@ -9,13 +9,42 @@ html {
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(to bottom, #bfe4ff, #eaf6ff);
+    /*background: linear-gradient(to bottom, #bfe4ff, #eaf6ff);*/
+    /*background: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4451240/20bdbf9989ac0cb2e38e3e48f914ce78e5b6fe11/header.jpg?t=1774871755");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*image-rendering: auto;*/
 }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
+    background: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4451240/20bdbf9989ac0cb2e38e3e48f914ce78e5b6fe11/header.jpg?t=1774871755") center/cover no-repeat;
+
+    opacity: 0.4;
+    z-index: -1;
+    image-rendering: auto;
+}
+section {
+    scroll-margin-top: 450px;
+}
 .hero {
     text-align: center;
     padding: 80px 20px;
+}
+
+.hero div{
     background: linear-gradient(to bottom, #7ecbff, #cfe9ff);
+    padding:20px;
+    border-radius: 15px;
+    max-width: fit-content;
+    margin: 0 auto;
 }
 
 .hero-img {
@@ -43,27 +72,29 @@ body {
     justify-content: center;
     gap: 15px;
     padding: 15px;
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 500px;
     border-radius: 50px;
     background: rgba(255,255,255,0.6);
     backdrop-filter: blur(12px);
     box-shadow: inset 0 0 20px rgba(255,255,255,0.7), 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
 }
 .navbar a{
     text-decoration: none;
     font-size: 1.8rem;
     color: #4fa9ff;
     font-weight: bold;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
 }
 .navbar:hover {
-    animation: floatUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 0 30px 60px rgba(0,0,0,0.2);
 }
 .navbar a:hover{
-    animation: floatSmall 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    transform: translateY(-1px) scale(1.01);
+    transform: translateY(-10px) scale(1.02);
 }
 .navbar a:visited{
     color: #4fa9ff;
@@ -82,11 +113,10 @@ body {
     background: rgba(255,255,255,0.9);
     border-radius: 25px;
     padding: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    /*box-shadow: 0 20px 40px rgba(0,0,0,0.1);*/
     font-size:1.4rem;
-}
-.card:hover {
-    animation: floatUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
 }
 .card:hover {
     transform: translateY(-10px) scale(1.02);
@@ -96,9 +126,10 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size:1.4rem;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
 }
 .button:hover {
-    animation: floatUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 30px 60px rgba(0,0,0,0.2);
 }
@@ -123,11 +154,10 @@ body {
     border-radius: 20px;
     background: linear-gradient(to bottom right, #ffffff, #dff3ff);
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
 }
 
-.feature:hover {
-    animation: floatSmall 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
 @keyframes floatSmall {
     0% { transform: translateY(0) scale(1); }
     /*50% { transform: translateY(-4px) scale(1.02); }*/
@@ -160,9 +190,8 @@ button {
     background: #f0f8ff;
     padding: 15px;
     border-radius: 12px;
-}
-.grid div:hover {
-    animation: floatTiny 0.25s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
 }
 .grid span{
     padding:5px;
