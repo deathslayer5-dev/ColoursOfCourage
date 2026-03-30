@@ -245,6 +245,8 @@ button {
     font-family: 'Nunito', sans-serif;
     border: 1px solid #dff3ff;
     padding:2px;
+    resize: none;
+    overflow:auto;
 }
 .popup {
     font-size:1.3rem;
