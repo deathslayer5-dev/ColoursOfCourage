@@ -245,7 +245,7 @@ footer {
 .steam-button {
     position: fixed;
     right: 50px;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%) rotate(-15deg);
     z-index: 1000;
     animation: swing 2s infinite ease-in-out;
@@ -280,6 +280,19 @@ footer {
 }
 
 .youtube-button img {
+    width: 200px;
+    height: 200px;
+}
+.tiktok-button {
+    position: fixed;
+    right: 50px;
+    top: 30%;
+    transform: translateY(-50%) rotate(-15deg);
+    z-index: 1000;
+    animation: swing 2s infinite ease-in-out;
+}
+
+.tiktok-button img {
     width: 200px;
     height: 200px;
 }
