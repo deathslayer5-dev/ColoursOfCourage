@@ -122,6 +122,11 @@ section {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 30px 60px rgba(0,0,0,0.2);
 }
+video{
+    margin:auto;
+    width: 100%;
+    padding:5px;
+}
 .button{
     font-family: 'Nunito', sans-serif;
     font-size:1.4rem;
