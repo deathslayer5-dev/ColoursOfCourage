@@ -1,5 +1,3 @@
-
-
 /* styles.css */
 html {
     scroll-behavior: smooth;
@@ -9,14 +7,8 @@ html {
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    /*background: linear-gradient(to bottom, #bfe4ff, #eaf6ff);*/
-    /*background: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4451240/20bdbf9989ac0cb2e38e3e48f914ce78e5b6fe11/header.jpg?t=1774871755");*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-    /*image-rendering: auto;*/
 }
+
 body::before {
     content: "";
     position: fixed;
@@ -25,23 +17,25 @@ body::before {
     width: 100%;
     height: 100%;
 
-    background: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4451240/20bdbf9989ac0cb2e38e3e48f914ce78e5b6fe11/header.jpg?t=1774871755") center/cover no-repeat;
+    background: url("assets/banner.jpg") center/cover no-repeat;
 
     opacity: 0.4;
     z-index: -1;
     image-rendering: auto;
 }
+
 section {
     scroll-margin-top: 450px;
 }
+
 .hero {
     text-align: center;
     padding: 80px 20px;
 }
 
-.hero div{
+.hero div {
     background: linear-gradient(to bottom, #7ecbff, #cfe9ff);
-    padding:20px;
+    padding: 20px;
     border-radius: 15px;
     max-width: fit-content;
     margin: 0 auto;
@@ -52,18 +46,19 @@ section {
     max-width: 700px;
     border-radius: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
     font-size: 3.5rem;
     color: white;
-    text-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
+
 .hero p {
     font-size: 2.5rem;
     color: white;
-    text-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -75,13 +70,14 @@ section {
     margin: 10px auto;
     max-width: fit-content;
     border-radius: 50px;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(12px);
-    box-shadow: inset 0 0 20px rgba(255,255,255,0.7), 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.7), 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     font-size: 1.8rem;
     color: #4fa9ff;
@@ -89,14 +85,17 @@ section {
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
 }
+
 .navbar:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
-.navbar a:hover{
+
+.navbar a:hover {
     transform: translateY(-10px) scale(1.02);
 }
-.navbar a:visited{
+
+.navbar a:visited {
     color: #4fa9ff;
 }
 
@@ -110,34 +109,39 @@ section {
 }
 
 .card {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
     padding: 30px;
     /*box-shadow: 0 20px 40px rgba(0,0,0,0.1);*/
-    font-size:1.4rem;
+    font-size: 1.4rem;
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
 }
+
 .card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
-video{
-    margin:auto;
+
+video {
+    margin: auto;
     width: 100%;
-    padding:5px;
+    padding: 5px;
 }
-.button{
+
+.button {
     font-family: 'Nunito', sans-serif;
-    font-size:1.4rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    font-size: 1.4rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
 }
+
 .button:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
+
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -158,20 +162,24 @@ video{
     padding: 20px;
     border-radius: 20px;
     background: linear-gradient(to bottom right, #ffffff, #dff3ff);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
 }
 
 @keyframes floatSmall {
-    0% { transform: translateY(0) scale(1); }
+    0% {
+        transform: translateY(0) scale(1);
+    }
     /*50% { transform: translateY(-4px) scale(1.02); }*/
-    100% { transform: translateY(-8px) scale(1.03); }
+    100% {
+        transform: translateY(-8px) scale(1.03);
+    }
 }
 
 .feature:hover {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -198,70 +206,85 @@ button {
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
 }
-.grid span{
-    padding:5px;
+
+.grid span {
+    padding: 5px;
     font-weight: bold;
 }
+
 @keyframes floatTiny {
-    0% { transform: translateY(0) scale(1); }
-    100% { transform: translateY(-6px) scale(1.01); }
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-6px) scale(1.01);
+    }
 }
 
 .grid div:hover {
     transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-#contact h1{
+
+#contact h1 {
     font-size: 2rem;
 }
 
-.form-group{
-    display:grid;
+.form-group {
+    display: grid;
     font-size: 1.2rem;
     background: #dde6f8;
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
     /*max-width: 400px;*/
 }
-.form-group:not(:last-child){
+
+.form-group:not(:last-child) {
     margin-bottom: 20px;
 }
-.form-group:hover{
+
+.form-group:hover {
     transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-.form-group label{
+
+.form-group label {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
-.form-group input{
+
+.form-group input {
     border-radius: 10px;
     font-size: 1.3rem;
     font-family: 'Nunito', sans-serif;
     border: 1px solid #dff3ff;
-    padding:2px;
+    padding: 2px;
 }
-.form-group textarea{
+
+.form-group textarea {
     border-radius: 10px;
     font-size: 1.3rem;
     font-family: 'Nunito', sans-serif;
     border: 1px solid #dff3ff;
-    padding:2px;
+    padding: 2px;
     resize: none;
-    overflow:auto;
+    overflow: auto;
 }
+
 .popup {
-    font-size:1.3rem;
+    font-size: 1.3rem;
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 }
 
@@ -301,6 +324,7 @@ footer {
     width: 200px;
     height: 200px;
 }
+
 /* FLOATING instagram BUTTON */
 .instagram-button {
     position: fixed;
@@ -315,6 +339,7 @@ footer {
     width: 200px;
     height: 200px;
 }
+
 /* FLOATING Youtube BUTTON */
 .youtube-button {
     position: fixed;
@@ -329,6 +354,7 @@ footer {
     width: 200px;
     height: 200px;
 }
+
 .tiktok-button {
     position: fixed;
     right: 50px;
@@ -344,13 +370,23 @@ footer {
 }
 
 @keyframes swing {
-    0% { transform: translateY(-50%) rotate(-15deg); }
-    50% { transform: translateY(-50%) rotate(15deg); }
-    100% { transform: translateY(-50%) rotate(-15deg); }
+    0% {
+        transform: translateY(-50%) rotate(-15deg);
+    }
+    50% {
+        transform: translateY(-50%) rotate(15deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(-15deg);
+    }
 }
 
 
 @keyframes floatUp {
-    0% { transform: translateY(0) scale(1); }
-    100% { transform: translateY(-10px) scale(1.02); }
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-10px) scale(1.02);
+    }
 }

@@ -7,7 +7,7 @@ function openPopup() {
         "You are learning, always."
     ];
 
-    document.getElementById("popup-text").textContent = messages[Math.floor(Math.random()*messages.length)];
+    document.getElementById("popup-text").textContent = messages[Math.floor(Math.random() * messages.length)];
     document.getElementById("popup").classList.remove("hidden");
 }
 
