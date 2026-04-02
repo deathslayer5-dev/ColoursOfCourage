@@ -1,0 +1,134 @@
+/* MOBILE OVERRIDES */
+
+body {
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    padding: 40px 15px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+.hero-img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* NAVBAR */
+.navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.navbar a {
+    font-size: 1rem;
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px 10px;
+    gap: 25px;
+}
+
+/* CARDS */
+.card {
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 18px;
+}
+
+/* ABOUT SECTION (stack instead of 2 columns) */
+.about {
+    grid-template-columns: 1fr;
+}
+
+/* FEATURES */
+.feature {
+    padding: 15px;
+}
+
+/* GRID (2 → 1 column for readability) */
+.grid {
+    grid-template-columns: 1fr;
+}
+
+/* BUTTONS */
+button,
+.button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 14px;
+}
+
+/* FORM */
+.form-group label {
+    font-size: 1.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 1rem;
+    padding: 8px;
+}
+
+/* POPUP */
+.popup-content {
+    width: 90%;
+    padding: 20px;
+}
+
+/* FLOATING BUTTONS (this was the biggest problem honestly) */
+.steam-button,
+.instagram-button,
+.youtube-button,
+.tiktok-button {
+    position: fixed;
+    transform: none;
+    animation: none;
+}
+
+/* Shrink icons massively so they don’t bully the screen */
+.steam-button img,
+.instagram-button img,
+.youtube-button img,
+.tiktok-button img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Reposition to corners instead of chaos */
+.steam-button {
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+}
+
+.tiktok-button {
+    right: 10px;
+    top: 10px;
+}
+
+.instagram-button {
+    left: 10px;
+    top: 10px;
+}
+
+.youtube-button {
+    left: 10px;
+    bottom: 10px;
+    top: auto;
+}
+
+/* SECTION SPACING FIX */
+section {
+    scroll-margin-top: 100px;
+}
