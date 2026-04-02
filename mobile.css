@@ -22,7 +22,6 @@ body {
     border-radius: 15px;
 }
 
-/* NAVBAR */
 .navbar {
     flex-wrap: wrap;
     gap: 10px;
@@ -33,35 +32,29 @@ body {
     font-size: 1rem;
 }
 
-/* CONTAINER */
 .container {
     padding: 20px 10px;
     gap: 25px;
 }
 
-/* CARDS */
 .card {
     padding: 20px;
     font-size: 1rem;
     border-radius: 18px;
 }
 
-/* ABOUT SECTION (stack instead of 2 columns) */
 .about {
     grid-template-columns: 1fr;
 }
 
-/* FEATURES */
 .feature {
     padding: 15px;
 }
 
-/* GRID (2 → 1 column for readability) */
 .grid {
     grid-template-columns: 1fr;
 }
 
-/* BUTTONS */
 button,
 .button {
     width: 100%;
@@ -69,7 +62,6 @@ button,
     padding: 14px;
 }
 
-/* FORM */
 .form-group label {
     font-size: 1.2rem;
 }
@@ -80,23 +72,19 @@ button,
     padding: 8px;
 }
 
-/* POPUP */
 .popup-content {
     width: 90%;
     padding: 20px;
 }
 
-/* FLOATING BUTTONS (this was the biggest problem honestly) */
 .steam-button,
 .instagram-button,
 .youtube-button,
 .tiktok-button {
     position: fixed;
-    transform: none;
-    animation: none;
+    z-index: 1000;
 }
 
-/* Shrink icons massively so they don’t bully the screen */
 .steam-button img,
 .instagram-button img,
 .youtube-button img,
@@ -105,30 +93,43 @@ button,
     height: 60px;
 }
 
-/* Reposition to corners instead of chaos */
 .steam-button {
     right: 10px;
     bottom: 10px;
-    top: auto;
+    animation: swing 2s infinite ease-in-out;
 }
 
 .tiktok-button {
     right: 10px;
     top: 10px;
+    animation: swing 2s infinite ease-in-out;
 }
 
 .instagram-button {
     left: 10px;
     top: 10px;
+    animation: swing 2s infinite ease-in-out;
 }
 
 .youtube-button {
     left: 10px;
     bottom: 10px;
-    top: auto;
+    animation: swing 2s infinite ease-in-out;
 }
 
-/* SECTION SPACING FIX */
+@keyframes swing {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+/* SECTION SCROLL FIX */
 section {
     scroll-margin-top: 100px;
 }
