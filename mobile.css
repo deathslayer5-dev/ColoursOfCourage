@@ -91,25 +91,25 @@ button,
 }
 .steam-button {
     right: 15px;
-    bottom: calc(5px + env(safe-area-inset-bottom));
+    bottom: 30%;
     animation: swing 2s infinite ease-in-out;
 }
 
 .youtube-button {
     left: 15px;
-    bottom: calc(5px + env(safe-area-inset-bottom));
+    bottom: 30%;
     animation: swing 2s infinite ease-in-out;
 }
 
 .tiktok-button {
     right: 15px;
-    top: calc(5px + env(safe-area-inset-top, 5px));
+    top: 30%;
     animation: swing 2s infinite ease-in-out;
 }
 
 .instagram-button {
     left: 15px;
-    top: calc(5px + env(safe-area-inset-top, 5px));
+    top: 30%;
     animation: swing 2s infinite ease-in-out;
 }
 
