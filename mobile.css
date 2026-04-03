@@ -89,43 +89,59 @@ button,
     width: 60px;
     height: 60px;
 }
-
 .steam-button {
     right: 15px;
     bottom: calc(5px + env(safe-area-inset-bottom));
-    animation: swing 2s infinite ease-in-out;
+    animation: swing-bottom 2s infinite ease-in-out;
 }
 
 .youtube-button {
     left: 15px;
     bottom: calc(5px + env(safe-area-inset-bottom));
-    animation: swing 2s infinite ease-in-out;
+    animation: swing-bottom 2s infinite ease-in-out;
 }
 
 .tiktok-button {
     right: 15px;
     top: calc(5px + env(safe-area-inset-top, 5px));
-    animation: swing 2s infinite ease-in-out;
+    animation: swing-top 2s infinite ease-in-out;
 }
 
 .instagram-button {
     left: 15px;
     top: calc(5px + env(safe-area-inset-top, 5px));
-    animation: swing 2s infinite ease-in-out;
+    animation: swing-top 2s infinite ease-in-out;
 }
 
-@keyframes swing {
+@keyframes swing-bottom {
     0% {
         transform: rotate(-15deg);
+        bottom: calc(5px + env(safe-area-inset-bottom));
     }
     50% {
         transform: rotate(15deg);
+        bottom: calc(5px + env(safe-area-inset-bottom));
     }
     100% {
         transform: rotate(-15deg);
+        bottom: calc(5px + env(safe-area-inset-bottom));
     }
 }
 
+@keyframes swing-top {
+    0% {
+        transform: rotate(-15deg);
+        top: calc(5px + env(safe-area-inset-top, 5px));
+    }
+    50% {
+        transform: rotate(15deg);
+        top: calc(5px + env(safe-area-inset-top, 5px));
+    }
+    100% {
+        transform: rotate(-15deg);
+        top: calc(5px + env(safe-area-inset-top, 5px));
+    }
+}
 section {
     scroll-margin-top: 100px;
 }
