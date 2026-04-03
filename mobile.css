@@ -91,13 +91,13 @@ button,
 }
 .steam-button {
     right: 15px;
-    bottom: 30%;
+    bottom: 10%;
     animation: swing 2s infinite ease-in-out;
 }
 
 .youtube-button {
     left: 15px;
-    bottom: 30%;
+    bottom: 10%;
     animation: swing 2s infinite ease-in-out;
 }
 
