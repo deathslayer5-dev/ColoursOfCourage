@@ -1,10 +1,7 @@
-/* MOBILE OVERRIDES */
-
 body {
     font-size: 14px;
 }
 
-/* HERO */
 .hero {
     padding: 40px 15px;
 }
@@ -95,25 +92,25 @@ button,
 
 .steam-button {
     right: 15px;
-    bottom: calc(env(safe-area-inset-bottom) + 20px);
+    bottom: calc(5px + env(safe-area-inset-bottom));
     animation: swing 2s infinite ease-in-out;
 }
 
 .youtube-button {
     left: 15px;
-    bottom: calc(env(safe-area-inset-bottom) + 20px);
+    bottom: calc(5px + env(safe-area-inset-bottom));
     animation: swing 2s infinite ease-in-out;
 }
 
 .tiktok-button {
     right: 15px;
-    top: 15px;
+    top: calc(5px + env(safe-area-inset-top, 5px));
     animation: swing 2s infinite ease-in-out;
 }
 
 .instagram-button {
     left: 15px;
-    top: 15px;
+    top: calc(5px + env(safe-area-inset-top, 5px));
     animation: swing 2s infinite ease-in-out;
 }
 
@@ -129,7 +126,6 @@ button,
     }
 }
 
-/* SECTION SCROLL FIX */
 section {
     scroll-margin-top: 100px;
 }
