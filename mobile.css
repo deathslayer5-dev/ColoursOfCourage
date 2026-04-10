@@ -24,6 +24,29 @@ body {
     gap: 10px;
     padding: 10px 15px;
 }
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+}
+
+.topbar a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4fa9ff;
+}
+
+.hero {
+    margin-top: 60px;
+}
 
 .navbar a {
     font-size: 1rem;
