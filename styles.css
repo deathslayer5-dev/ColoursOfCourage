@@ -435,16 +435,16 @@ footer {
 
 .reviews-layout {
     display: grid;
-    grid-template-columns: 0.7fr 1.3fr; /* image dominates */
+    grid-template-columns: 0.5fr 1.5fr;
     align-items: center;
     gap: 40px;
 }
 
 .reviews-image img {
-    width: 140%;
+    width: 115%;
     max-width: none;
     border-radius: 20px;
-    transform: translateX(5%) scale(1.1);
+    transform: translateX(2%);
 }
 .reviews-text {
     display: flex;
@@ -454,11 +454,9 @@ footer {
 }
 
 .reviews-text h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    max-width: 250px;
 }
-
 .reviews-image {
-    overflow: hidden;
+    overflow: visible;
 }
