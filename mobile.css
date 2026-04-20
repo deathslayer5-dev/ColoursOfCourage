@@ -152,3 +152,12 @@ button,
 section {
     scroll-margin-top: 100px;
 }
+
+.reviews-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.reviews-image {
+    margin-top: 20px;
+}
