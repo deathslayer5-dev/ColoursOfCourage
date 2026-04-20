@@ -425,18 +425,31 @@ footer {
     }
 }
 
+.reviews {
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
 .reviews-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 30px;
-}
-
-.reviews-text h2 {
-    font-size: 2.5rem;
+    gap: 40px;
 }
 
 .reviews-text {
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.reviews-text h2 {
+    font-size: 3rem;
+    max-width: 300px;
+}
+
+.reviews-image img {
+    width: 100%;
+    border-radius: 20px;
 }
