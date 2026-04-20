@@ -158,6 +158,10 @@ section {
     text-align: center;
 }
 
+.reviews-text h2 {
+    font-size: 2rem;
+}
+
 .reviews-image {
     margin-top: 20px;
 }
