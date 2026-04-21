@@ -158,6 +158,11 @@ section {
     text-align: center;
 }
 
-.reviews-image {
-    margin-top: 20px;
+.reviews-image img {
+    width: 110%;
+    transform: none;
+}
+
+.reviews {
+    padding: 25px;
 }

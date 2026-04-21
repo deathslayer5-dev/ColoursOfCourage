@@ -425,18 +425,38 @@ footer {
     }
 }
 
+.reviews {
+    margin: 60px auto;
+    max-width: 1100px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+}
+
 .reviews-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
+}
+
+.reviews-image img {
+    width: 115%;
+    max-width: none;
+    border-radius: 20px;
+    transform: translateX(2%);
+}
+.reviews-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .reviews-text h2 {
     font-size: 2.5rem;
+    max-width: 250px;
 }
-
-.reviews-text {
-    display: flex;
-    align-items: center;
+.reviews-image {
+    overflow: visible;
 }
